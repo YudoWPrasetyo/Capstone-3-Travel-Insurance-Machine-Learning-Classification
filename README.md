@@ -67,3 +67,50 @@ Oleh karena itu nilai Recall yang tinggi, tanpa mengorbankan nilai presisi yang 
 - Net Sales berpengaruh terhadap Claim
 - Commision (In Value) Berpengaruh terhadap Claim
 
+
+Dari hasil korelasi matrix menunjukan tidak ada fitur yang korelasi tinggi, tetapi dapat dilihat bahwa ada beberapa fitur yang memiliki korelasi positif dan negaitf, yaitu :
+
+Korelasi Positif (+) :
+- Duration
+- Net Sales
+- Commision (in value)             
+
+Korelasi Negatif (-)
+- Age
+
+Korelasi matrix digunakan untuk melihat hubungan antar kolom yang bertipe numerik, disini saya menggunakan pearson correlation dikarenakan saya ingin melihat linear correlation dimana pearson correlation sangat cocok digunakan untuk mencari hubungan linear correlation.
+
+# Feature Selection
+Berikut ini merupakan kolom - kolom yang saya gunakan sebagai feature untuk training model machine learning :
+    
+    - Agency Type
+    - Distribution Channel
+    - Duration
+    - Net Sales 
+    - Comission (in value) 
+    - Age
+
+Berikut Kolom- Kolom yang tidak saya gunakan ketika menggunakan training :
+    
+    - Agency
+    - Product Name
+    - Destination
+    - Gender
+    
+Alasan saya tidak menggunakan kolom tersebut karena beberapa kolom memiliki fungsi yang sama dengan kolom lain seperti agency memiliki fungsi yang sama seperti agency type. Kolom Gender tidak digunakan karena memiliki missing value diatas 70 % dari total data. Sedangkan kolom lain saya drop berdasarkan domain knowledge (Destinaation, Product Name)
+
+Kolom **Claim** digunakan sebagai Target yang nanti digunakan dalam Machine Learning
+
+
+# CONCLUSION
+
+Hasil dari 2 Metode yang saya gunakan didapatkan hasil evaluation matrix yang kurang baik dikarenakan jumlah kolom dan data yang sedikit
+Alasan Melakukan Tuning data adalah untuk mendapatakan improvement parameter terbaik
+
+
+# RECOMENDATION
+UNTUK MEMPERBAGUS ATAU MEMPERBAIKI MODEL MAKA DISARANKAN ATAU DI REKOMENDASIKAN UNTUK MENAMBAHKAN :
+1. Kolom
+2. Jumlah Data
+3. Menggunakan Algortima Lain yang memiliki error terkecil dan mencoba kombinasi hyper parameter lain
+
